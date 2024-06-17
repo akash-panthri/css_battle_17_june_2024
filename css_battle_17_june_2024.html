@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+<span></span>
+<section></section>
+<style>
+  *{
+    background:#EFF8FE;
+    position:relative;
+  }
+  div {
+    width: 330px;
+    height: 180px;
+    left:27px;
+    top:52px;
+    background: #4F77FF;
+  }
+  div::before, div::after{
+    content:"";
+    position:absolute;
+    width:165px;
+    height:75px;
+    background:#EFF8FE;
+    left:40px;
+    top:10px;
+  }
+   div::after{
+left:125px;
+    top:95px;
+   }
+  span::after, span::before{
+    content:"";
+    position:absolute;
+    width:75px;
+    height:75px;
+    border-radius:50%;
+    background:#EFF8FE;
+    left:67px;
+    top:-33px;
+  }
+   span::before{
+      left:242px;
+    top:-118px;
+   }
+  section::after, section::before{
+     content:"";
+    position:absolute;
+    width:10px;
+    height:180px;
+    background:#EFF8FE;
+    left:47px;
+    top:-128px;
+  }
+   section::before{
+     left:327px;
+    top:-128px;
+   }
+</style>
+
+</body>
+</html>
